@@ -32,7 +32,7 @@ sd-amateur-filter is a Stable Diffusion Automatic1111/WebUI extension that appli
 ```
 - Clone this repository into the extensions folder:
 ```bash
-  https://github.com/ZyloO-ai/sd-amateur-filter.git
+  git clone https://github.com/ZyloO-ai/sd-amateur-filter.git
 ```
 - Restart the Stable Diffusion Web UI
 
