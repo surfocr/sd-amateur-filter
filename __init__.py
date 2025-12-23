@@ -67,13 +67,13 @@ def apply_amateur_filter_cv(
     hsv_sat_var=5,
     hsv_val_var=6,
     rgb_noise_var=0.007,
-    sharpen_intensity=0.15,
+    sharpen_intensity=0.01,
     warmth_factor=0.03,
     contrast_alpha=1.0,
-    contrast_beta=0.0,
-    desaturation_factor=0.78,
-    grain_amount=0.08,
-    jpeg_quality=54
+    contrast_beta=3.0,
+    desaturation_factor=0.85,
+    grain_amount=0.02,
+    jpeg_quality=80
 ):
     """Apply amateur filter to a BGR OpenCV image."""
     image = lower_dynamic_range(image, dynamic_range_factor)
