@@ -54,7 +54,7 @@ You should now see an "Amateur Filter" collapsible panel in txt2img and img2img 
 ```
 - Restart ComfyUI
 
-The "Amateur Filter" node will appear in the **image/postprocessing** category.
+The "draco detail" node will appear in the **image/postprocessing** category with a distinctive black and white color scheme.
 
 
 ## 🔧 Usage Guide
@@ -70,7 +70,8 @@ The "Amateur Filter" node will appear in the **image/postprocessing** category.
 - Click Generate, your image will be processed with the selected filter settings.
 
 ### 🎨 For ComfyUI
-- Add the "Amateur Filter" node from the **image/postprocessing** category.
+- Add the "draco detail" node from the **image/postprocessing** category.
+- The node features a sleek black and white color scheme for easy identification.
 - Connect the node after your image generation or loading node.
 - Adjust the parameters using the node's sliders:
   - **Basic controls**: Sharpen Intensity, Desaturation Factor, Grain Amount, JPEG Quality
