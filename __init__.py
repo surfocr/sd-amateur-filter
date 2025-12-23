@@ -29,7 +29,7 @@ def add_rgb_noise(img, var=0.007):
     noise = np.random.randint(-noise_range, noise_range, img.shape, dtype=np.int16)
     return np.clip(img + noise, 0, 255).astype(np.uint8)
 
-def sharpen(img, intensity=0.15):
+def sharpen(img, intensity=0.01):
     kernel = np.array([
         [0, -intensity, 0],
         [-intensity, 1 + 4*intensity, -intensity],
@@ -52,7 +52,7 @@ def desaturate(img, factor=1.0):
     hsv_img[..., 1] = (hsv_img[..., 1].astype(np.float32) * factor).clip(0,255).astype(np.uint8)
     return cv2.cvtColor(hsv_img, cv2.COLOR_HSV2BGR)
 
-def add_grain(img, grain_amount=0.08):
+def add_grain(img, grain_amount=0.02):
     if grain_amount <= 0:
         return img
     std_dev = grain_amount * 255
