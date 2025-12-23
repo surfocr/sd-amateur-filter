@@ -16,8 +16,8 @@ app.registerExtension({
                 }
                 
                 // Set black and white color scheme
-                this.color = "#222222";  // Dark gray/black background
-                this.bgcolor = "#1a1a1a";  // Slightly lighter black for background
+                this.color = "#222222";  // Node body color
+                this.bgcolor = "#1a1a1a";  // Node background color
                 
                 // Set title bar color
                 this.title_bgcolor = "#ffffff";  // White title background
